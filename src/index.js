@@ -1,17 +1,16 @@
+import "./index.css";
 import getWeather from "./weather";
 import getForecast from "./forecast";
-const {log} = console;
+import WeatherDashboard from "./WeatherDashboard";
 
-const root = document.getElementById('root');
+const { log } = console;
+
+const root = document.getElementById("root");
 log(root);
 
-
-getWeather(41.4221,-91.0432).then(
-    data => {
-        getForecast(data.gridId, data.gridX, data.gridY).then(
-            forecast => {
-                log(forecast);
-            }
-        )
-    }
-)
+(async () => {
+  const data = await getWeather(41.4221, -91.0432);
+  const forecast = await getForecast(data.gridId, data.gridX, data.gridY);
+  const weatherDashboard = new WeatherDashboard(root, forecast);
+  weatherDashboard.render();
+})();
