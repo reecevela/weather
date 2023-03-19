@@ -2,8 +2,21 @@ import "./index.css";
 import getWeather from "./weather";
 import getForecast from "./forecast";
 import "../weather-icons-master/css/weather-icons.min.css";
+import { cities } from "./cities";
 
 const root = document.getElementById("root");
+
+updateForecast(41.4221, -91.0432);
+
+//all functions below
+const handleCitySubmit = (e) => {
+  e.preventDefault();
+  const cityStateString = document.getElementById('city-choice').value;
+  const [cityInput, stateInput] = cityStateString.split(", ");
+  // Find the city with that name
+  const cityMatch = cities.find((city) => city.city == cityInput && city.state == stateInput);
+  updateForecast(cityMatch.latitude, cityMatch.longitude, cityStateString);
+}
 
 function getWeatherRowBoxShadow(shortForecast, isDaytime) {
   let baseColor = "#e0e5ec";
@@ -57,35 +70,61 @@ function createWeatherDashboard(forecast, location) {
   todayCard.innerHTML = `
     <div class="location">${location}</div>
     <div class="date-time">${new Date().toLocaleString()}</div>
+    <br>
+    <form id="city-form">
+      <label for="city">Choose another large city:</label>
+      <input list="cities" id="city-choice" name="city-choice">
+      <input type="submit" id="city-submit">
+      <datalist id="cities">
+        ${cities.map( (place) => {
+          return `<option value="${place.city}, ${place.state}">`
+        }).join('')}
+      </datalist>
+    </form>
   `;
   dashboard.appendChild(todayCard);
-
+  
+  
   forecast.periods.slice(1).forEach((period) => {
     const weatherRow = document.createElement("div");
     weatherRow.classList.add("weather-row");
     weatherRow.style.boxShadow = getWeatherRowBoxShadow(period.shortForecast, period.isDaytime);
     weatherRow.innerHTML = `
-      <div>
-        <div>${period.name}</div>
-        <div>${period.temperature}°${period.temperatureUnit}</div>
-      </div>
-      <div>
-        ${getWeatherIconHTML(period.shortForecast, period.isDaytime)}
-        <div>${period.shortForecast}</div>
-      </div>
+    <div>
+    <div>${period.name}</div>
+    <div>${period.temperature}°${period.temperatureUnit}</div>
+    ${getWeatherIconHTML(period.shortForecast, period.isDaytime)}
+    </div>
+    <div>
+    <div>${period.detailedForecast}</div>
+    </div>
     `;
     dashboard.appendChild(weatherRow);
   });
 
+  //clear existing children
+  while (root.firstChild) {
+    root.removeChild(root.firstChild);
+  }
+  
   root.appendChild(dashboard);
+  const cityForm = document.getElementById('city-form');
+  cityForm.onsubmit = (e) => handleCitySubmit(e);
 }
 
-getWeather(41.4221, -91.0432).then((data) => {
-  getForecast(data.gridId, data.gridX, data.gridY).then((forecast) => {
-    createWeatherDashboard(forecast, `${data.relativeLocation.properties.city}, ${data.relativeLocation.properties.state}`);
-    const timeElement = document.querySelector('.date-time');
-    setInterval(() => {
-      timeElement.innerHTML = `<div class="date-time">${new Date().toLocaleString()}</div>`
-    }, 1000);
+function updateForecast(lat, long, locationInput = null) {
+  getWeather(lat, long).then((data) => {
+    getForecast(data.gridId, data.gridX, data.gridY).then((forecast) => {
+      if (!locationInput) {
+        createWeatherDashboard(forecast, `${data.relativeLocation.properties.city}, ${data.relativeLocation.properties.state}`);
+      } else {
+        console.log(locationInput);
+        createWeatherDashboard(forecast, locationInput);
+      }
+      const timeElement = document.querySelector('.date-time');
+      setInterval(() => {
+        timeElement.innerHTML = `<div class="date-time">${new Date().toLocaleString()}</div>`
+      }, 1000);
+    });
   });
-});
+}
