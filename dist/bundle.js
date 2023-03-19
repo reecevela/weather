@@ -111,7 +111,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  font-family: \"Arial\", sans-serif;\n  background-color: #e0e5ec;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 100vh;\n  margin: 0;\n}\n\n.weather-dashboard {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 1rem;\n  width: 100%;\n  max-width: 1200px;\n  padding: 1rem;\n  box-sizing: border-box;\n}\n\n.weather-card,\n.weather-row {\n  background-color: #ffffff;\n  border-radius: 12px;\n  padding: 1rem;\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n}\n\n.weather-card {\n  grid-column: span 2;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  flex-wrap: wrap;\n}\n\n.weather-card .location {\n  font-size: 1.5rem;\n  font-weight: bold;\n}\n\n.weather-card .date-time {\n  font-size: 1.2rem;\n}\n\n.weather-row {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  flex-wrap: wrap;\n}\n\n.weather-row .icon {\n  font-size: 1.5rem;\n}\n", "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"AAAA;EACE,gCAAgC;EAChC,yBAAyB;EACzB,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,iBAAiB;EACjB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,qCAAqC;EACrC,SAAS;EACT,WAAW;EACX,iBAAiB;EACjB,aAAa;EACb,sBAAsB;AACxB;;AAEA;;EAEE,yBAAyB;EACzB,mBAAmB;EACnB,aAAa;EACb,wCAAwC;AAC1C;;AAEA;EACE,mBAAmB;EACnB,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;EACnB,eAAe;AACjB;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;EACnB,eAAe;AACjB;;AAEA;EACE,iBAAiB;AACnB","sourcesContent":["body {\n  font-family: \"Arial\", sans-serif;\n  background-color: #e0e5ec;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 100vh;\n  margin: 0;\n}\n\n.weather-dashboard {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 1rem;\n  width: 100%;\n  max-width: 1200px;\n  padding: 1rem;\n  box-sizing: border-box;\n}\n\n.weather-card,\n.weather-row {\n  background-color: #ffffff;\n  border-radius: 12px;\n  padding: 1rem;\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n}\n\n.weather-card {\n  grid-column: span 2;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  flex-wrap: wrap;\n}\n\n.weather-card .location {\n  font-size: 1.5rem;\n  font-weight: bold;\n}\n\n.weather-card .date-time {\n  font-size: 1.2rem;\n}\n\n.weather-row {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  flex-wrap: wrap;\n}\n\n.weather-row .icon {\n  font-size: 1.5rem;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  font-family: \"Arial\", sans-serif;\n  background-color: #1a1a1a;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 100vh;\n  margin: 0;\n}\n\n.weather-dashboard {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 1rem;\n  width: 100%;\n  max-width: 1200px;\n  padding: 1rem;\n  box-sizing: border-box;\n}\n\n.weather-card,\n.weather-row {\n  background-color: #222831;\n  border-radius: 12px;\n  padding: 1rem;\n}\n\n.weather-card {\n  grid-column: span 2;\n}\n\n.weather-card .location {\n  font-size: 1.5rem;\n  font-weight: bold;\n  color: #08d9d6;\n}\n\n.weather-card .date-time {\n  font-size: 1.2rem;\n  color: #08d9d6;\n}\n\n.weather-row {\n  display: flex;\n  align-items: stretch;\n  flex-flow: column nowrap;\n}\n\n.weather-row div {\n  display: flex;\n  justify-content: start;\n  flex-direction: row;\n}\n\n.weather-row div * {\n  margin: 1rem;\n  color: #eeeeee;\n}\n\n.weather-row div span {\n  color: #08d9d6;\n}\n\n@media screen and (max-width: 712px) {\n  .weather-dashboard {\n    grid-template-columns: 1fr;\n  }\n  .weather-card {\n    grid-column: span 1;\n  }\n}\n", "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"AAAA;EACE,gCAAgC;EAChC,yBAAyB;EACzB,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,iBAAiB;EACjB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,qCAAqC;EACrC,SAAS;EACT,WAAW;EACX,iBAAiB;EACjB,aAAa;EACb,sBAAsB;AACxB;;AAEA;;EAEE,yBAAyB;EACzB,mBAAmB;EACnB,aAAa;AACf;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,oBAAoB;EACpB,wBAAwB;AAC1B;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,YAAY;EACZ,cAAc;AAChB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE;IACE,0BAA0B;EAC5B;EACA;IACE,mBAAmB;EACrB;AACF","sourcesContent":["body {\n  font-family: \"Arial\", sans-serif;\n  background-color: #1a1a1a;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 100vh;\n  margin: 0;\n}\n\n.weather-dashboard {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 1rem;\n  width: 100%;\n  max-width: 1200px;\n  padding: 1rem;\n  box-sizing: border-box;\n}\n\n.weather-card,\n.weather-row {\n  background-color: #222831;\n  border-radius: 12px;\n  padding: 1rem;\n}\n\n.weather-card {\n  grid-column: span 2;\n}\n\n.weather-card .location {\n  font-size: 1.5rem;\n  font-weight: bold;\n  color: #08d9d6;\n}\n\n.weather-card .date-time {\n  font-size: 1.2rem;\n  color: #08d9d6;\n}\n\n.weather-row {\n  display: flex;\n  align-items: stretch;\n  flex-flow: column nowrap;\n}\n\n.weather-row div {\n  display: flex;\n  justify-content: start;\n  flex-direction: row;\n}\n\n.weather-row div * {\n  margin: 1rem;\n  color: #eeeeee;\n}\n\n.weather-row div span {\n  color: #08d9d6;\n}\n\n@media screen and (max-width: 712px) {\n  .weather-dashboard {\n    grid-template-columns: 1fr;\n  }\n  .weather-card {\n    grid-column: span 1;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -887,24 +887,45 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var root = document.getElementById("root");
-function getWeatherRowBackground(shortForecast, isDaytime) {
+function getWeatherRowBoxShadow(shortForecast, isDaytime) {
   var baseColor = "#e0e5ec";
   var weatherColor;
-  if (/(Sunny|Clear)/.test(shortForecast)) {
+  if (/(Sunny)/.test(shortForecast)) {
     weatherColor = "#fff6a3";
   } else if (/Cloudy/.test(shortForecast)) {
     weatherColor = "#b0b0b0";
   } else if (/(Rain|Showers)/.test(shortForecast)) {
     weatherColor = "#2196F3";
-  } else if (/Thunderstorms/.test(shortForecast)) {
+  } else if (/storm/.test(shortForecast)) {
     weatherColor = "#673AB7";
   } else if (/Snow/.test(shortForecast)) {
     weatherColor = "#B2EBF2";
   } else {
-    weatherColor = "#e0e5ec";
+    weatherColor = baseColor;
   }
-  var gradientColor = isDaytime ? "rgba(255, 255, 255, 0.2)" : "rgba(0, 0, 0, 0.2)";
-  return "linear-gradient(90deg, ".concat(gradientColor, " 0%, ").concat(baseColor, " 50%, ").concat(weatherColor, " 100%)");
+  var dayColor = isDaytime ? "rgb(255, 255, 255)" : "rgba(0, 0, 0)";
+  return "-2px 0px 2px ".concat(dayColor, ",\t4px 0px 2px ").concat(weatherColor);
+}
+function getWeatherIconHTML(shortForecast, isDaytime) {
+  var iconClass;
+  if (/Sunny/.test(shortForecast)) {
+    iconClass = 'sunny';
+  } else if (/Clear/.test(shortForecast)) {
+    iconClass = 'clear';
+  } else if (/Cloudy/.test(shortForecast)) {
+    iconClass = 'cloudy';
+  } else if (/(Rain|Showers)/.test(shortForecast)) {
+    iconClass = 'rain';
+  } else if (/storm/.test(shortForecast)) {
+    iconClass = 'thunderstorm';
+  } else if (/Snow/.test(shortForecast)) {
+    iconClass = 'snow';
+  } else if (/Wind/.test(shortForecast)) {
+    iconClass = 'windy';
+  } else {
+    console.error('no iconclass defined');
+  }
+  return "<i class=\"wi wi-".concat(isDaytime ? 'day' : 'night', "-").concat(iconClass, "\"></i>");
 }
 function createWeatherDashboard(forecast, location) {
   var dashboard = document.createElement("div");
@@ -916,8 +937,8 @@ function createWeatherDashboard(forecast, location) {
   forecast.periods.slice(1).forEach(function (period) {
     var weatherRow = document.createElement("div");
     weatherRow.classList.add("weather-row");
-    weatherRow.style.background = getWeatherRowBackground(period.shortForecast, period.isDaytime);
-    weatherRow.innerHTML = "\n      <div>".concat(period.name, "</div>\n      <div>").concat(period.temperature, "\xB0").concat(period.temperatureUnit, "</div>\n      <div>").concat(period.shortForecast, "</div>\n    ");
+    weatherRow.style.boxShadow = getWeatherRowBoxShadow(period.shortForecast, period.isDaytime);
+    weatherRow.innerHTML = "\n      <div>\n        <div>".concat(period.name, "</div>\n        <div>").concat(period.temperature, "\xB0").concat(period.temperatureUnit, "</div>\n      </div>\n      <div>\n        ").concat(getWeatherIconHTML(period.shortForecast, period.isDaytime), "\n        <div>").concat(period.shortForecast, "</div>\n      </div>\n    ");
     dashboard.appendChild(weatherRow);
   });
   root.appendChild(dashboard);

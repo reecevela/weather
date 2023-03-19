@@ -1,6 +1,6 @@
 body {
   font-family: "Arial", sans-serif;
-  background-color: #e0e5ec;
+  background-color: #1a1a1a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,36 +20,52 @@ body {
 
 .weather-card,
 .weather-row {
-  background-color: #ffffff;
+  background-color: #222831;
   border-radius: 12px;
   padding: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .weather-card {
   grid-column: span 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .weather-card .location {
   font-size: 1.5rem;
   font-weight: bold;
+  color: #08d9d6;
 }
 
 .weather-card .date-time {
   font-size: 1.2rem;
+  color: #08d9d6;
 }
 
 .weather-row {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: stretch;
+  flex-flow: column nowrap;
 }
 
-.weather-row .icon {
-  font-size: 1.5rem;
+.weather-row div {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+}
+
+.weather-row div * {
+  margin: 1rem;
+  color: #eeeeee;
+}
+
+.weather-row div span {
+  color: #08d9d6;
+}
+
+@media screen and (max-width: 712px) {
+  .weather-dashboard {
+    grid-template-columns: 1fr;
+  }
+  .weather-card {
+    grid-column: span 1;
+  }
 }
