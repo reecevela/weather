@@ -5942,7 +5942,7 @@ function getWeatherRowBoxShadow(shortForecast, isDaytime) {
     weatherColor = baseColor;
   }
   var dayColor = isDaytime ? "rgb(255, 255, 255)" : "rgba(0, 0, 0)";
-  return "-2px 0px 2px ".concat(dayColor, ",\t4px 0px 2px ").concat(weatherColor);
+  return "inset -2px 0px 2px ".concat(dayColor, ", inset\t-4px 0px 2px ").concat(weatherColor);
 }
 function getWeatherIconHTML(shortForecast, isDaytime) {
   var iconClass;
@@ -5970,7 +5970,7 @@ function createWeatherDashboard(forecast, location) {
   dashboard.classList.add("weather-dashboard");
   var todayCard = document.createElement("div");
   todayCard.classList.add("weather-card");
-  todayCard.innerHTML = "\n    <div class=\"location\">".concat(location, "</div>\n    <div class=\"date-time\">").concat(new Date().toLocaleString(), "</div>\n    <br>\n    <form id=\"city-form\">\n      <label for=\"city\">Choose from over 1000 cities:</label>\n      <input list=\"cities\" id=\"city-choice\" name=\"city-choice\">\n      <input type=\"submit\" id=\"city-submit\" value=\"Get Forecast\">\n      <datalist id=\"cities\">\n        ").concat(_cities__WEBPACK_IMPORTED_MODULE_4__.cities.map(function (place) {
+  todayCard.innerHTML = "\n    <div class=\"location\">".concat(location, "</div>\n    <div class=\"date-time\">").concat(new Date().toLocaleString(), "</div>\n    <br>\n    <form id=\"city-form\">\n      <label for=\"city\">Choose from over 1000 cities:</label>\n      <input list=\"cities\" id=\"city-choice\" name=\"city-choice\">\n      <input type=\"submit\" id=\"city-submit\">\n      <datalist id=\"cities\">\n        ").concat(_cities__WEBPACK_IMPORTED_MODULE_4__.cities.map(function (place) {
     return "<option value=\"".concat(place.city, ", ").concat(place.state, "\">");
   }).join(''), "\n      </datalist>\n    </form>\n  ");
   dashboard.appendChild(todayCard);
