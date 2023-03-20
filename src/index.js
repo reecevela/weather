@@ -36,7 +36,7 @@ function getWeatherRowBoxShadow(shortForecast, isDaytime) {
   }
 
   let dayColor = isDaytime ? "rgb(255, 255, 255)" : "rgba(0, 0, 0)";
-  return `-2px 0px 2px ${dayColor},	4px 0px 2px ${weatherColor}`;
+  return `-inset -2px 0px 2px ${dayColor}, inset	-4px 0px 2px ${weatherColor}`;
 }
 
 function getWeatherIconHTML(shortForecast, isDaytime) {
