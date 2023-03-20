@@ -1,4 +1,4 @@
-# weather-app
+# weather
 Displays forecasts for over 1000 US cities in a searchable manner.
 
 View live: [reecevela.GitHub.io/weather](reecevela.GitHub.io/weather)
