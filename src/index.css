@@ -43,6 +43,7 @@ body {
   border-radius: 4px;
   border: none;
   background-color: #393e46;
+  font-size: max(1.2rem, 16px);
   color: #eeeeee;
 }
 
@@ -54,7 +55,6 @@ body {
   border: none;
   background-color: #08d9d6;
   color: #222831;
-  font-size: max(1.2rem, 16px);
   cursor: pointer;
 }
 
