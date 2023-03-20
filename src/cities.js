@@ -378,12 +378,6 @@ export const cities = [
         "state": "Pennsylvania"
     }, 
     {
-        "city": "Anchorage", 
-        "latitude": 61.2180556, 
-        "longitude": -149.9002778,
-        "state": "Alaska"
-    }, 
-    {
         "city": "Stockton", 
         "latitude": 37.9577016, 
         "longitude": -121.2907796,

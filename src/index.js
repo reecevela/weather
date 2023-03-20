@@ -96,7 +96,7 @@ function createWeatherDashboard(forecast, location) {
     ${getWeatherIconHTML(period.shortForecast, period.isDaytime)}
     </div>
     <div>
-    <div>${period.detailedForecast}</div>
+    <div><span>${period.detailedForecast}</span></div>
     </div>
     `;
     dashboard.appendChild(weatherRow);
