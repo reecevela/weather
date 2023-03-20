@@ -72,7 +72,7 @@ function createWeatherDashboard(forecast, location) {
     <div class="date-time">${new Date().toLocaleString()}</div>
     <br>
     <form id="city-form">
-      <label for="city">Choose another large city:</label>
+      <label for="city">Choose from over 1000 cities:</label>
       <input list="cities" id="city-choice" name="city-choice">
       <input type="submit" id="city-submit">
       <datalist id="cities">
