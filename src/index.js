@@ -91,7 +91,7 @@ function createWeatherDashboard(forecast, location) {
     weatherRow.style.boxShadow = getWeatherRowBoxShadow(period.shortForecast, period.isDaytime);
     weatherRow.innerHTML = `
     <div>
-    <div>${period.name}</div>
+    <div style="font-weight:bold">${period.name}</div>
     <div>${period.temperature}°${period.temperatureUnit}</div>
     ${getWeatherIconHTML(period.shortForecast, period.isDaytime)}
     </div>

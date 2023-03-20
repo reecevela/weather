@@ -1,0 +1,36 @@
+I apologize for the confusion earlier. Here's an SVG code for a black background with neon blue wavy lines. This pattern has 30 lines that are not aligned, overlapping, and creating various shapes like you described.
+
+xml
+Copy code
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1000 1000">
+  <rect width="100%" height="100%" fill="black"/>
+  <path d="M0,100 Q250,300 500,100 T1000,100" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M0,200 Q250,50 500,200 T1000,200" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M0,300 Q250,500 500,300 T1000,300" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M0,400 Q250,250 500,400 T1000,400" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M0,500 Q250,700 500,500 T1000,500" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M0,600 Q250,450 500,600 T1000,600" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M0,700 Q250,900 500,700 T1000,700" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M0,800 Q250,650 500,800 T1000,800" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M0,900 Q250,750 500,900 T1000,900" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M0,1000 Q250,850 500,1000 T1000,1000" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M50,0 Q300,250 50,500 T50,1000" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M150,0 Q400,250 150,500 T150,1000" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M250,0 Q500,250 250,500 T250,1000" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M350,0 Q600,250 350,500 T350,1000" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M450,0 Q700,250 450,500 T450,1000" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M550,0 Q800,250 550,500 T550,1000" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M650,0 Q900,250 650,500 T650,1000" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M750,0 Q1000,250 750,500 T750,1000" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M850,0 Q1100,250 850,500 T850,1000" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M950,0 Q1200,250 950,500 T950,1000" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M1000,0 Q1250,250 1000,500 T1000,1000" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M0,50 Q250,300 500,50 T1000,50" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M0,150 Q250,400 500,150 T1000,150" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M0,250 Q250,500 500,250 T1000,250" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M0,350 Q250,600 500,350 T1000,350" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M0,450 Q250,700 500,450 T1000,450" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M0,550 Q250,800 500,550 T1000,550" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M0,650 Q250,900 500,650 T1000,650" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+  <path d="M0,750 Q250,1000 500,750 T1000,750" stroke="rgba(77, 255, 255, 0.5)" stroke-width="2" fill="none"/>
+</svg>
