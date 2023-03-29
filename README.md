@@ -1,7 +1,7 @@
 # weather
 Displays forecasts for over 1000 US cities in a searchable manner.
 
-View live: [reecevela.GitHub.io/weather](reecevela.GitHub.io/weather)
+View live: [https://reecevela.github.io/weather](https://reecevela.github.io/weather)
 
 While creating this, I learned a lot about asynchronous coding and how to use an icons library.
 
